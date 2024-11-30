@@ -8,11 +8,10 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  
 :root  {
   --background: 217 100% 95%;
   --foreground: 217 5% 10%;
-  --card: 217 50% 90%;
+  --card: #8a8e97;
   --card-foreground: 217 5% 15%;
   --popover: 217 100% 95%;
   --popover-foreground: 217 100% 10%;
@@ -34,7 +33,7 @@
 .dark {
   --background: 217 50% 10%;
   --foreground: 217 5% 90%;
-  --card: 217 50% 10%;
+  --card: #242c3b;
   --card-foreground: 217 5% 90%;
   --popover: 217 50% 5%;
   --popover-foreground: 217 5% 90%;
@@ -62,12 +61,16 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+.card {
+  background: var(--card);
+  color: var(--card-foreground);
+}
 
 @layer base {
   :root {
     --background: 217 100% 95%;
     --foreground: 0 0% 3.9%;
-    --card: 0 0% 100%;
+    --card: #8a8e97;
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
@@ -94,7 +97,7 @@ body {
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
+    --card: #242c3b;
     --card-foreground: 0 0% 98%;
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;

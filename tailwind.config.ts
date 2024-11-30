@@ -10,10 +10,11 @@ export default {
   theme: {
   	extend: {
   		colors: {
+			primmary: "#017CEE",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
-  				DEFAULT: 'hsl(var(--card))',
+  				DEFAULT: 'var(--card)',
   				foreground: 'hsl(var(--card-foreground))'
   			},
   			popover: {
@@ -55,7 +56,11 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		animation: {
+			'bounce-slow': 'bounce 5s linear infinite',
+			'spin-slow': 'spin 10s linear infinite',
+		  }
   	}
   },
   plugins: [require("tailwindcss-animate")],
